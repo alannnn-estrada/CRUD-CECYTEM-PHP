@@ -1,0 +1,109 @@
+body{
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #28a745, #71c291 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container{
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+h2{
+    margin-bottom: 1.5rem;
+    color: #333;
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin: 0.5rem 0 0.25rem;
+    color: #666;
+    font-weight: bold;
+    text-align: left;
+}
+
+input[type="text"], input[type="password"], input[type="email"]{
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:hover, input[type="password"]:hover, input[type="email"]:hover{
+    border-color: #28a745;
+}
+
+button[type="submit"]{
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    outline: none;
+    background: #28a745;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover{
+    background: #218838;
+}
+
+.redirect-login{
+    margin-top: 1rem;
+    text-align: center;
+    color: #666;
+}
+
+.redirect-login a{
+    color: #28a745;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.redirect-login a:hover{
+    color: #218838;
+}
+
+.alert {
+    display: none;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+.alert-error {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}

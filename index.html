@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins:600&display=swap' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="login-content">
+        <form id="loginForm" action="php/login.php" method="post">
+            <img src="https://seeklogo.com/images/C/cecytem-logo-57EA94498B-seeklogo.com.png" class="logo" title="Logo" alt="Logo">
+            <h2 class="title">Login</h2>
+            <div class="input-div one">
+                <div class="i">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="div">
+                    <h5>Usuario</h5>
+                    <input type="text" id="username" class="input" name="username" required>
+                </div>
+            </div>
+            <div class="input-div pass">
+                <div class="i"> 
+                    <i class="fas fa-lock"></i>
+                </div>
+                <div class="div">
+                    <h5>Contraseña</h5>
+                    <input type="password" id="password" class="input" name="password" required>
+                </div>
+            </div>
+            <a href="html/registro.html">¿No tienes una cuenta? Regístrate</a>
+            <input type="submit" class="btn" value="Iniciar Sesión">
+        </form>
+        <div id="message" class="alert"></div>
+    </div>
+    <script src="js/login.js"></script>
+</body>
+</html>
