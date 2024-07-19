@@ -9,6 +9,7 @@ document.getElementById("registerForm").addEventListener("submit", function (e) 
         .then(response => response.json())
         .then(data => {
             var messageDiv = document.getElementById("message");
+            console.log(data.status);
             if (data.status === "success") {
                 messageDiv.className = "alert alert-success";
                 document.getElementById("registerForm").reset();

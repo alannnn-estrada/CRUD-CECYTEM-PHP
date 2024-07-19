@@ -38,7 +38,7 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
         if (data.status === "success") {
             messageDiv.className = "alert alert-success";
             setTimeout(() => {
-                window.location.href = "tareas.php";
+                window.location.href = "html/tareas.html";
             }, 1000);
         } else {
             messageDiv.className = "alert alert-error";

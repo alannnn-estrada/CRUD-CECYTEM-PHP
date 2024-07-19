@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de tareas</title>
+    <link rel="stylesheet" href="../css/tareas.css">
+    <!-- SweetAlert2 para las alertas -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="container">
+        <button id="logoutBtn">Cerrar sesión</button>
+        <h1>Agregar nueva tarea</h1>
+        <form id="taskForm" method="POST">
+            <div class="form-group">
+                <label for="title">Título</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Descripción</label>
+                <textarea id="description" name="description" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="dueDate">Fecha de vencimiento</label>
+                <input type="date" id="dueDate" name="dueDate" required>
+            </div>
+            <button type="submit">Agregar tarea</button>
+        </form>
+        <div id="sucessMessage" class="success-message"></div>
+
+        <h1>Tareas</h1>
+        <div id="taskList" class="task-list">
+            <!-- Aquí se agregarán las tareas dinámicamente -->
+        </div>
+    </div>
+    <script src="../js/tareas.js"></script>
+</body>
+</html>
